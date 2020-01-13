@@ -1,0 +1,42 @@
+{
+  "name": "autogist",
+  "version": "0.0.1",
+  "description": "⚡📄🥯 Sync a GitHub Gist.",
+  "main": "dist",
+  "repository": "https://github.com/cawfree/autogist",
+  "author": "Alex Thomas (@cawfree) <hello@cawfree.com>",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "github",
+    "gist",
+    "update",
+    "status",
+    "cli"
+  ],
+  "bin": {
+    "autogist": "./dist"
+  },
+  "scripts": {
+    "pretty": "yarn prettier ./src/* --write",
+    "build": "babel src --out-dir dist && yarn uglifyjs ./dist/* -o ./dist/* && chmod +x ./dist/*",
+    "start": "npm run-script build && node dist",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.0",
+    "@babel/core": "^7.8.0",
+    "@babel/polyfill": "^7.8.0",
+    "@babel/preset-env": "^7.8.2",
+    "@babel/preset-react": "^7.8.0",
+    "husky": "^4.0.7",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "uglify-js": "^3.7.5"
+  },
+  "dependencies": {
+    "axios": "^0.19.1",
+    "chalk": "^3.0.0",
+    "yargs": "^15.1.0"
+  }
+}
