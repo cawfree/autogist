@@ -1,6 +1,6 @@
 {
   "name": "autogist",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "⚡📄🥯 SA mini Twitter for your pinned repositories.",
   "main": "dist/index.js",
   "repository": "https://github.com/cawfree/autogist",

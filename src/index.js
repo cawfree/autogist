@@ -19,7 +19,7 @@ const baseRequest = (sfx = '') => ({
   },
 });
 
-const formatGist = (visible=true, name='autogist', description=defaultDescription, content) => ({
+const formatGist = (visible=true, name='autogist.md', description=defaultDescription, content) => ({
   files: {
     [name]: {
       content,
