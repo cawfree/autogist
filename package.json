@@ -1,6 +1,6 @@
 {
   "name": "autogist",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "⚡📄🥯 SA mini Twitter for your pinned repositories.",
   "main": "dist/index.js",
   "repository": "https://github.com/cawfree/autogist",
@@ -15,7 +15,7 @@
     "cli"
   ],
   "bin": {
-    "autogist": "./dist"
+    "autogist": "./dist/index.js"
   },
   "scripts": {
     "pretty": "yarn prettier ./src/* --write",
