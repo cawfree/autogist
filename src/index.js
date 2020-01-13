@@ -77,22 +77,25 @@ let { gist, description, content } = argv;
 (
   async () => {
     if (typeof AUTOGIST_TOKEN !== 'string' || AUTOGIST_TOKEN.length <= 0) {
-      console.error(chalk.yellow(`It looks like you haven\'t set the AUTOGIST_TOKEN environment variable. Head over to https://github.com/cawfree/autogist for more info.`));
+      console.error(chalk.yellow(`💭 It looks like you haven\'t set the AUTOGIST_TOKEN environment variable. Head over to https://github.com/cawfree/autogist for more info.`));
+    }
+    else if (typeof content !== 'string' || content.length <= 0) {
+      console.error(chalk.yellow('💭 Try adding content to your gist using -c.'));
     } else if (gist === undefined) {
       gist = await createGist(
         description,
         content,
       );
-      console.log(chalk.green(`Created a new gist! (${gist})`));
+      console.log(chalk.green(`✨ Created a new gist! (${gist})`));
     } else if (typeof gist === 'string' && gist.length > 0) { // TODO: should test the gist id
       await updateGist(
         gist,
         description,
         content,
       );
-      console.log(chalk.green('Updated!'));
+      console.log(chalk.green('✨ Updated!'));
     } else {
-      console.error(chalk.red(`Expected valid gist, encountered ${gist}.`));
+      console.error(chalk.red(`❌ Expected valid gist, encountered ${gist}.`));
     }
   }
 )();
