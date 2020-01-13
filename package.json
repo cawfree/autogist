@@ -1,6 +1,6 @@
 {
   "name": "autogist",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "⚡📄🥯 SA mini Twitter for your pinned repositories.",
   "main": "dist/index.js",
   "repository": "https://github.com/cawfree/autogist",
@@ -26,7 +26,6 @@
   "devDependencies": {
     "@babel/cli": "^7.8.0",
     "@babel/core": "^7.8.0",
-    "@babel/polyfill": "^7.8.0",
     "@babel/preset-env": "^7.8.2",
     "@babel/preset-react": "^7.8.0",
     "husky": "^4.0.7",
@@ -35,6 +34,7 @@
     "uglify-js": "^3.7.5"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.8.0",
     "axios": "^0.19.1",
     "chalk": "^3.0.0",
     "yargs": "^15.1.0"
