@@ -1,6 +1,6 @@
 {
   "name": "autogist",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "⚡📄🥯 SA mini Twitter for your pinned repositories.",
   "main": "dist/index.js",
   "repository": "https://github.com/cawfree/autogist",
@@ -19,7 +19,7 @@
   },
   "scripts": {
     "pretty": "yarn prettier ./src/* --write",
-    "build": "babel src --out-dir dist && yarn uglifyjs ./dist/* -o ./dist/* && chmod +x ./dist/*",
+    "build": "babel src --out-dir dist && yarn uglifyjs ./dist/* -o ./dist/* && chmod +x ./dist/cli.js",
     "start": "npm run-script build && node dist",
     "test": "jest"
   },
