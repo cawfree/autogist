@@ -1,8 +1,8 @@
 {
   "name": "autogist",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "⚡📄🥯 SA mini Twitter for your pinned repositories.",
-  "main": "dist",
+  "main": "dist/index.js",
   "repository": "https://github.com/cawfree/autogist",
   "author": "Alex Thomas (@cawfree) <hello@cawfree.com>",
   "license": "MIT",
