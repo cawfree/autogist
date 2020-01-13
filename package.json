@@ -15,7 +15,7 @@
     "cli"
   ],
   "bin": {
-    "autogist": "./dist/index.js"
+    "autogist": "./dist/cli.js"
   },
   "scripts": {
     "pretty": "yarn prettier ./src/* --write",
