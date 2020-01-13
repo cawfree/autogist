@@ -1,7 +1,7 @@
 {
   "name": "autogist",
   "version": "0.0.1",
-  "description": "⚡📄🥯 Sync a GitHub Gist.",
+  "description": "⚡📄🥯 SA mini Twitter for your pinned repositories.",
   "main": "dist",
   "repository": "https://github.com/cawfree/autogist",
   "author": "Alex Thomas (@cawfree) <hello@cawfree.com>",

@@ -1,5 +1,5 @@
 # autogist
-⚡📄🥯Sync a GitHub Gist.
+A mini [Twitter](https://twitter.com/home) for your pinned repositories.
 
 
 ## 🚀 Getting Started
