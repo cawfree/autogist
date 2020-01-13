@@ -27,7 +27,7 @@ echo "AUTOGIST_TOKEN <your-token-here>" >> ~/.bashrc
 source ~/.bashrc
 ```
 
-## 🗞️ Publishing via the Commnand Line
+## 🗞️ Publishing via the Command Line
 
 ### Create a Gist
 
